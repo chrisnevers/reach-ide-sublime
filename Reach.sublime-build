@@ -1,0 +1,14 @@
+{
+	"cmd": ["reach", "compile", "$file"],
+	"selector": "source.rsh",
+	"variants": [
+		{
+			"name": "Compile",
+			"cmd": ["reach", "compile", "$file"]
+		},
+		{
+			"name": "Run",
+			"cmd": ["reach", "run", "${file%%.*}"]
+		}
+	]
+}
